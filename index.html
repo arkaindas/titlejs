@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-		<title>Title JS</title>
-		<script src="title.js"></script>
+	<title>Title JS</title>
+	<script src="title.js"></script>
         <script>
+        /* Simplax Effect - http://github.com/arkaindas/simplax */
 		window.onload=function(){
 			document.body.style.backgroundAttachment="fixed";
 			window.onscroll=function () {
 				document.body.style.backgroundPosition = "0px " + (0 + (Math.max(document.documentElement.scrollTop, document.body.scrollTop) / 8)) + "px";
 			}
 		}
-		</script>
+	</script>
         <style>
             body {
 
-                background: #E99;
+                background: url('https://mraybould.files.wordpress.com/2007/05/red_brick_wall.jpg'); //Thanks! Google image search random.
             }
             span,a {
             	margin-right:10px;
