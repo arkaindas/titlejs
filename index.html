@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Title JS</title>
+		<script src="title.js"></script>
+        <script>
+		window.onload=function(){
+			document.body.style.backgroundAttachment="fixed";
+			window.onscroll=function () {
+				document.body.style.backgroundPosition = "0px " + (0 + (Math.max(document.documentElement.scrollTop, document.body.scrollTop) / 8)) + "px";
+			}
+		}
+		</script>
+        <style>
+            body {
+
+                background: #E99;
+            }
+            span,a {
+            margin-right:10px;
+            text-decoration:none;
+            }
+            .container {
+                width: 50%;
+                margin: auto;
+            }
+            h1, h2,h3, p {
+            	color:#FFF;
+            }
+            .wrap{
+                border-radius:0 10px;
+                padding: 20px;
+                background-color: #000;
+                margin:20px 0;
+            }
+            .miniwrap{
+                border-radius:0 10px;
+                padding: 20px;
+                background-color: #000;
+                margin:20px 0;
+            }
+            .main-title{
+            	color:#A22;
+            }
+            .demo-link{
+            	padding:5px;
+            	border-radius:0 5px;
+            	cursor:pointer;
+            	background-color: #A22;
+            	color:#FFF;
+            }
+            pre{
+                border-radius:0 10px;
+                padding: 20px;
+            	background-color: #A22;
+            	color:#EEE;
+            	display:block;
+            }
+            .c001{
+            	background-color: #777;
+            }
+            .c002{
+            	background-color: #777;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="c001 wrap">
+            	<h1 class="main-title">TITLE.JS</h1>
+            	<p>Browser Title Bar Manipulation JavaScript Library With No Dependency.</p>
+            </div>
+	    <div class="c002 wrap">
+            	<h1>Download</h1>
+            	<a href="https://github.com/arkaindas/titlejs/blob/master/title.min.js" class="demo-link">Compress, Production ( 1.2kb )</a><a href="https://github.com/arkaindas/titlejs/blob/master/title.js" class="demo-link">Uncompress, Developement ( 1.4kb )</a>
+            </div>
+	    <div class="c002 wrap">
+            	<h1>Usage</h1>
+            	<div class="miniwrap">
+		    	<h2>Add Prefix</h2>
+		    	<h3>Example:</h3>
+		    	<p>
+		    	<pre>
+&lt;script&gt;
+	Title.pref("(2)");
+&lt;/script&gt;
+			</pre>
+		    	</p>
+		    	<span onclick="Title.pref('(2)');" class="demo-link">Click To See On Title Bar</span><span onclick="location.reload();" class="demo-link">Refresh</span>
+            	</div>
+            	
+            	<div class="miniwrap">
+		    	<h2>Add Suffix</h2>
+		    	<h3>Example:</h3>
+		    	<p>
+		    	<pre>
+&lt;script&gt;
+	Title.suf("(2)");
+&lt;/script&gt;
+			</pre>
+		    	</p>
+		    	<span onclick="Title.suf('(2)');" class="demo-link">Click To See On Title Bar</span><span onclick="location.reload();" class="demo-link">Refresh</span>
+            	</div>
+            	
+            	 <div class="miniwrap">
+		    	<h2>Change Predefined Title</h2>
+		    	<h3>Example:</h3>
+		    	<p>
+		    	<pre>
+&lt;script&gt;
+	Title.change("Changed Title");
+&lt;/script&gt;
+			</pre>
+		    	</p>
+		    	<span onclick="Title.change('Changed Title');" class="demo-link">Click To See On Title Bar</span><span onclick="location.reload();" class="demo-link">Refresh</span>
+            	</div>
+            	
+            	 <div class="miniwrap">
+		    	<h2>Animation: Marquee Effect</h2>
+		    	<h3>Example:</h3>
+		    	<p>
+		    	<pre>
+&lt;script&gt;
+	Title.animation("marquee");
+&lt;/script&gt;
+			</pre>
+		    	</p>
+		    	<span onclick="Title.animation('marquee');" class="demo-link">Click To See On Title Bar</span><span onclick="location.reload();" class="demo-link">Refresh</span>
+            	</div>
+            	
+            	<div class="miniwrap">
+		    	<h2>Animation: TypeWriter Effect</h2>
+		    	<h3>Example:</h3>
+		    	<p>
+		    	<pre>
+&lt;script&gt;
+	Title.animation("typeWriter");
+&lt;/script&gt;
+			</pre>
+		    	</p>
+		    	<span onclick="Title.animation('typeWriter');" class="demo-link">Click To See On Title Bar</span><span onclick="location.reload();" class="demo-link">Refresh</span>
+            	</div>
+            	
+            </div>
+            <div class="c002 wrap">
+            	<h1>Social</h1>
+            	<a href="https://github.com/arkaindas/titlejs" class="demo-link">Fork @Github</a><a href="https://fb.com/arkaindas" class="demo-link">@Twitter</a><a href="https://twitter.com/arkaindas" class="demo-link">Facebook</a>
+            </div>
+        </div>
+    </body>
+</html>
