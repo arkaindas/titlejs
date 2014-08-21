@@ -1,5 +1,5 @@
 /**********************
-titleJs v1.0 | (c) 2014 | Author: Arkaprava Majumder | Author Uri: http://arkapravamajumder.com 
+titleJs v1.0 | (c) 2014 | Plugin Uri:http://github.com/arkaindas/titlejs | Author: Arkaprava Majumder | Author Uri: http://arkapravamajumder.com 
 **********************/
 var Title = {
    vars: {
@@ -43,13 +43,12 @@ var Title = {
 	}
    },
    animation: function(param){
-   	switch(param){
-   	case "typeWriter":
-   	this.typeWriter();
-   	break;
-   	case "marquee":
-   	this.marquee();
-   	break;	
+   	switch(param) {
+	   	case "typeWriter":
+	   	this.typeWriter();
+	   	break;
+	   	case "marquee":
+	   	this.marquee();
    	}
    }
 
